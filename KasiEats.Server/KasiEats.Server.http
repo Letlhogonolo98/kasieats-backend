@@ -1,0 +1,6 @@
+@KasiEats.Server_HostAddress = http://localhost:5144
+
+GET {{KasiEats.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
