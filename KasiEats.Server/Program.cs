@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using KasiEats.Server.Models;
+using KasiEats.Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",

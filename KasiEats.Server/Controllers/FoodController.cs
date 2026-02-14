@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using KasiEats.Server.Models;
+using KasiEats.Server.Data;
 
 namespace KasiEats.Server.Controllers
 {
