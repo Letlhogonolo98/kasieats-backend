@@ -11,5 +11,6 @@ namespace KasiEats.Server.Data
         
         public DbSet<FoodItem> FoodItems { get; set; }
         public DbSet<Vendor> Vendors { get; set; }
+        public DbSet<MenuItem> MenuItems { get; set; }
     }
 }
