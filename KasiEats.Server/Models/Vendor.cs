@@ -19,5 +19,6 @@ namespace KasiEats.Models
 
         public string Description { get; set; }
         public string? LogoUrl { get; set; }
+        public bool IsOpen { get; set; } = false;
     }
 }

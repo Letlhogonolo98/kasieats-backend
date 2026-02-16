@@ -77,5 +77,17 @@ namespace KasiEats.Controllers
             if (vendor == null) return NotFound();
             return Ok(vendor);
         }
+
+        [HttpPut("{id}/status")]
+        public IActionResult UpdateStatus(int id, [FromBody] bool isOpen)
+        {
+            var vendor = _context.Vendors.Find(id);
+            if (vendor == null) return NotFound();
+
+            vendor.IsOpen = isOpen;
+            _context.SaveChanges();
+
+            return Ok(new { status = vendor.IsOpen });
+        }
     }
 }
